@@ -29,9 +29,10 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` notes + cards wri
 
 ## Part 1 — The molecules
 
-- [ ] **M3 · Amino acids & the peptide bond**
+- [x] **M3 · Amino acids & the peptide bond**
   The 20 standard residues, side-chain chemistry, ionisation, the peptide bond.
   *Anchor:* the "alphabet" that protein language models tokenise.
+  → `notes/m3-amino-acids.md`; deck `m3-amino-acids`; `problems/m3-sequence-space.md`.
 
 - [ ] **M4 · Protein structure & the folding problem**
   Primary→quaternary structure, secondary motifs, the Ramachandran plot, folding

@@ -8,6 +8,22 @@ Format per entry:
 
 ---
 
+- **2026-06-09** — **M3 covered.** Amino acids: universal architecture (α-carbon + amino
+  + carboxyl + H + R group), chirality / L-form, the zwitterion at pH 7 (derived from M1
+  acid/base), the peptide bond (condensation → amide, N→C directional backbone, planar/
+  rigid via resonance → φ/ψ degrees of freedom). The 20 side chains as four families
+  (hydrophobic/core, polar/surface, acidic, basic) + special characters (Gly, Pro, Cys/
+  disulfide, His pKₐ≈6 catalysis, aromatic UV280). ML hook: BLOSUM / ESM embeddings
+  recover the families. Checkpoints all correct; sharpened: charged→surface because
+  hydrophilic; His = versatility at working pH (not instability).
+  Artifacts: `notes/m3-amino-acids.md`, deck `m3-amino-acids`, `problems/m3-sequence-space.md`
+  (20¹⁰⁰ ≈ 10¹³⁰ → why design is ML-shaped).
+  **What to test next time:** the 4 families + where each goes; zwitterion; peptide-bond
+  formation & planarity; the 5 special residues; why His catalyses.
+  **Next:** M4 — primary→quaternary structure, secondary motifs (α-helix/β-sheet from
+  backbone H-bonds), Ramachandran (φ/ψ), the folding problem, the PDB → the AlphaFold
+  object. Then enzymes (M8).
+
 - **2026-06-09** — **M2 finished.** Worked through, in chat: reaction coupling (free
   energy adds; couple uphill to ATP hydrolysis via a shared intermediate on one enzyme);
   why ATP hydrolysis is favourable (charge repulsion + entropy + resonance/solvation),
