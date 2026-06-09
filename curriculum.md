@@ -66,7 +66,8 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` notes + cards wri
 
 ## Part 3 — Metabolism & energy (the carbon/nitrogen core)
 
-- [ ] **M10 · Bioenergetics & the ATP economy**
+- [x] **M10 · Bioenergetics & the ATP economy**
+  → `notes/m10-bioenergetics.md`; deck `m10-bioenergetics`; `problems/m10-redox-atp-yield.md`.
 - [ ] **M11 · Glycolysis & gluconeogenesis**
 - [ ] **M12 · TCA cycle & oxidative phosphorylation**
 - [ ] **M13 · Photosynthesis & carbon fixation**

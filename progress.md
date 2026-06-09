@@ -8,6 +8,22 @@ Format per entry:
 
 ---
 
+- **2026-06-09** — **M10 covered** (learner asked for more repetition/depth — module
+  deliberately re-treads M2 then deepens). Bioenergetics: ΔG°′ vs actual ΔG (concentration
+  term sets direction); ATP favourability re-derived; the **phosphoryl-transfer hierarchy**
+  with ATP deliberately mid-range = two-way currency (new key idea); ATP as cash-flow not
+  storage. Other currencies: NADH vs NADPH (same chemistry, opposite ratios — NAD⁺ high
+  for catabolism, NADPH high for anabolism); **redox as free energy, ΔG = −nFΔE°′** (their
+  electrochemistry); acetyl-CoA/thioester; activated-carrier concept. The catabolism (
+  oxidative, makes ATP+NADH) vs anabolism (reductive, spends ATP+NADPH) master map.
+  Artifacts: `notes/m10-bioenergetics.md`, deck `m10-bioenergetics` (12 cards),
+  `problems/m10-redox-atp-yield.md` (NADH→O₂ ΔE=1.14V → ΔG≈−220 kJ/mol → ~2.5 ATP, ~57%).
+  Checkpoint answers for Concept 1 provided; Concept 2 checkpoint left open for the learner.
+  **What to test next time:** ΔG°′ vs actual; transfer hierarchy & why ATP mid-range;
+  NADH vs NADPH roles/ratios; ΔG=−nFΔE; catabolism vs anabolism currencies.
+  **Next:** M11 (glycolysis) → M12 (TCA + oxidative phosphorylation) → M13 (carbon
+  fixation), now with the full energy/currency framework in place.
+
 - **2026-06-09** — **M9 covered.** Enzyme kinetics. Derived Michaelis–Menten from the
   steady-state assumption; defined V_max (=k_cat[E]_tot), k_cat (turnover), K_M (=[S] at
   half V_max, intrinsic to E–S pair). Two regimes (first-order capture-limited at low [S];
