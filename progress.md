@@ -8,6 +8,25 @@ Format per entry:
 
 ---
 
+- **2026-06-09** — **M2 finished.** Worked through, in chat: reaction coupling (free
+  energy adds; couple uphill to ATP hydrolysis via a shared intermediate on one enzyme);
+  why ATP hydrolysis is favourable (charge repulsion + entropy + resonance/solvation),
+  and the high ATP/ADP ratio (ΔG = ΔG° + RT ln Q) keeping it far from equilibrium;
+  the mechanism by which plentiful products slow net rate (they drive the reverse
+  reaction); kinetics — transition state, activation energy Eₐ, rate ∝ e^(−Eₐ/RT);
+  catalysis lowers the peak (both directions, K unchanged); enzymes stabilise the
+  transition state. Corrections made: "high ATP/ADP ratio" not "high ADP"; large −ΔG =
+  favourable ≠ fast.
+  Artifacts: `notes/m2-coupling-and-kinetics.md`, deck `m2-coupling-and-kinetics`,
+  `problems/m2-activation-barrier.md`.
+  **What to test next time:** coupled-ΔG sum; why ATP hydrolysis releases energy;
+  ΔG = ΔG° + RT ln Q and the ATP/ADP ratio; product-driven reverse reaction; Eₐ vs ΔG
+  (fast vs far); catalyst changes how-fast-not-how-far; enzyme = transition-state
+  stabiliser.
+  **Next:** M3 (amino acids — the 20, side-chain chemistry, the peptide bond) or jump
+  to M8 (enzymes) now that kinetics is in place. Leaning M3 first (it's the alphabet for
+  everything, incl. protein ML).
+
 - **2026-06-09** — **M1 covered + M2 started.** Worked through, in chat: bonding &
   electronegativity; water, hydrogen bonds, and the (entropy-driven) hydrophobic effect;
   protein folding as its consequence (incl. membrane proteins folding inside-out);

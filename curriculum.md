@@ -19,13 +19,13 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` notes + cards wri
   *Anchor:* why proteins fold and membranes self-assemble at all.
   → `notes/m1-chemical-foundations.md`, deck `m1-chemical-foundations`, `problems/m1-buffer-capacity.md`.
 
-- [~] **M2 · Thermodynamics & kinetics in biology**
+- [x] **M2 · Thermodynamics & kinetics in biology**
   Free energy (ΔG, ΔG°′), reaction coupling, ATP as energy currency; reaction
   rates, transition states, catalysis as rate enhancement.
   *Anchor:* what makes carbon-fixation reactions thermodynamically hard, and how
   cells pay for them.
-  → Done: free energy / equilibrium (`notes/m2-free-energy.md`, deck `m2-thermodynamics`).
-  Still to do: reaction coupling & ATP, kinetics (rates, transition states, catalysis).
+  → `notes/m2-free-energy.md` + `notes/m2-coupling-and-kinetics.md`; decks
+  `m2-thermodynamics` & `m2-coupling-and-kinetics`; `problems/m2-activation-barrier.md`.
 
 ## Part 1 — The molecules
 

@@ -50,5 +50,4 @@ minimum of G generally sits at a **mixture**, not at either pure extreme.
 ## See also
 - `notes/m1-chemical-foundations.md` (buffers — the question that started this).
 - `flashcards/decks/m2-thermodynamics.md`.
-- Still to do for full M2: reaction coupling & ATP, kinetics (rates, transition states,
-  activation energy, catalysis as barrier-lowering).
+- The rest of M2 (reaction coupling & ATP, kinetics, catalysis): `notes/m2-coupling-and-kinetics.md`.
