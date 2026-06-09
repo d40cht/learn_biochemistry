@@ -8,6 +8,26 @@ Format per entry:
 
 ---
 
+- **2026-06-09** — **M9 covered.** Enzyme kinetics. Derived Michaelis–Menten from the
+  steady-state assumption; defined V_max (=k_cat[E]_tot), k_cat (turnover), K_M (=[S] at
+  half V_max, intrinsic to E–S pair). Two regimes (first-order capture-limited at low [S];
+  saturated zero-order at high [S]). **k_cat/K_M** as catalytic efficiency / specificity
+  constant, its diffusion ceiling (~10⁸–10⁹; carbonic anhydrase "perfect"), and
+  competing-substrate partitioning → RuBisCO S_c/o = ratio of k_cat/K_M, v_carb/v_oxy =
+  S_c/o·[CO₂]/[O₂]. K_M ≠ exact affinity (= K_d only in rapid-equilibrium). Inhibition
+  (competitive ↑K_M, noncompetitive ↓V_max, uncompetitive, feedback) and allostery/
+  cooperativity (sigmoidal, hemoglobin, control valves). Learner couldn't write answers
+  this session; checkpoint answers were provided.
+  Artifacts: `notes/m9-enzyme-kinetics.md`, deck `m9-enzyme-kinetics` (12 cards),
+  `problems/m9-rubisco-specificity.md` (S_c/o≈90, [CO₂]/[O₂]≈0.04 → ~22% oxygenation,
+  matching M8's ~25%; C4 10× CO₂ → ~3%).
+  **What to test next time:** derive MM; meaning of K_M / k_cat / V_max; double-enzyme
+  effect; k_cat/K_M & diffusion limit; specificity-constant partitioning (RuBisCO);
+  inhibition types; cooperativity/sigmoidal.
+  **Next:** M13 (photosynthesis & carbon fixation — RuBisCO in its native Calvin cycle;
+  light reactions making ATP+NADPH; C4/CAM) — the big climate module. Optionally M10–M12
+  (bioenergetics/glycolysis/TCA) first for the full metabolic context.
+
 - **2026-06-09** — **M8 covered (a big one, very Socratic).** Enzyme catalysis built
   almost entirely from the learner's own questions. Core: enzymes lower Eₐ by stabilising
   the TRANSITION STATE, not the substrate (binding substrate tightly = anti-catalysis);

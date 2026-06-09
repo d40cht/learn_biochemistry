@@ -59,9 +59,10 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` notes + cards wri
   *Anchor:* RuBisCO and why it's slow & promiscuous; PETase.
   → `notes/m8-enzymes.md`; deck `m8-enzymes`; `problems/m8-rubisco-abundance.md`.
 
-- [ ] **M9 · Enzyme kinetics** (problem-heavy)
+- [x] **M9 · Enzyme kinetics** (problem-heavy)
   Michaelis–Menten, kcat/KM, inhibition, allostery.
   *Anchor:* quantifying "how good is this engineered enzyme?"
+  → `notes/m9-enzyme-kinetics.md`; deck `m9-enzyme-kinetics`; `problems/m9-rubisco-specificity.md`.
 
 ## Part 3 — Metabolism & energy (the carbon/nitrogen core)
 
