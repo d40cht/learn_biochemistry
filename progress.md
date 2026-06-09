@@ -8,6 +8,25 @@ Format per entry:
 
 ---
 
+- **2026-06-09** — **M4 covered.** Protein structure: the four levels; secondary
+  structure as the BACKBONE satisfying its own H-bonds (α-helix C=O i→N–H i+4; β-sheet
+  between adjacent strands; side chains point out; Ramachandran φ/ψ basins); tertiary
+  structure driven by SIDE-CHAIN interactions (hydrophobic effect dominant) between
+  residues distant in sequence; domains; quaternary structure (subunits, allostery,
+  RuBisCO/hemoglobin). Folding problem: Anfinsen (sequence encodes fold = free-energy
+  min) + Levinthal (funnel, not random search). PDB = 3D atomic coords; AlphaFold:
+  sequence → coords. Correction made: secondary H-bonds are backbone N–H/C=O, NOT side
+  chains (the learner's instinct was right but misattributed to side chains); H-bond ≠
+  salt bridge.
+  Artifacts: `notes/m4-protein-structure.md`, deck `m4-protein-structure`,
+  `problems/m4-levinthal.md` (3¹⁰⁰ ≈ 5×10⁴⁷ conformations → 10²⁷ yr).
+  **What to test next time:** backbone-vs-side-chain (secondary vs tertiary); α-helix
+  i→i+4; β-sheet between strands; Ramachandran; Anfinsen; Levinthal+funnel; what AF
+  in/outputs.
+  **Next:** M8 (enzymes) — we now have all prerequisites (kinetics, structure, side-chain
+  chemistry). Could instead do the lighter M5–M7 (carbs/lipids/nucleic acids) first, but
+  enzymes is where the climate payoff begins (RuBisCO, carbonic anhydrase, PETase).
+
 - **2026-06-09** — **M3 covered.** Amino acids: universal architecture (α-carbon + amino
   + carboxyl + H + R group), chirality / L-form, the zwitterion at pH 7 (derived from M1
   acid/base), the peptide bond (condensation → amide, N→C directional backbone, planar/

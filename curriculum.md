@@ -34,10 +34,11 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` notes + cards wri
   *Anchor:* the "alphabet" that protein language models tokenise.
   → `notes/m3-amino-acids.md`; deck `m3-amino-acids`; `problems/m3-sequence-space.md`.
 
-- [ ] **M4 · Protein structure & the folding problem**
+- [x] **M4 · Protein structure & the folding problem**
   Primary→quaternary structure, secondary motifs, the Ramachandran plot, folding
   thermodynamics, the PDB.
   *Anchor:* the exact object AlphaFold predicts.
+  → `notes/m4-protein-structure.md`; deck `m4-protein-structure`; `problems/m4-levinthal.md`.
 
 - [ ] **M5 · Carbohydrates & glycobiology** (lighter)
   Sugars, glycosidic bonds, polysaccharides, glycosylation.
