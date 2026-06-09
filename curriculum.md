@@ -7,6 +7,14 @@ protein / enzyme / climate application so relevance stays concrete.
 field is overwhelmingly about **proteins and enzymes**, which is good news — your
 3D-spatial and sequence-modelling intuitions transfer directly.
 
+### Target applications (what we're building toward)
+Concrete climate applications the learner wants to reach — used to steer the path:
+- **Hydrogenotroph food** — single-cell protein from hydrogen-oxidizing bacteria
+  ("protein from air and electricity", e.g. Solar Foods / Solein). Exercises M8
+  (hydrogenase metalloenzymes), M10 (redox/reducing power), M12 (electron transport),
+  M13 (carbon fixation), and the ML design layer. Primer:
+  `notes/app-hydrogenotroph-food.md`; best studied as a module after M13.
+
 Status legend: `[ ]` not started · `[~]` in progress · `[x]` notes + cards written.
 
 ---
@@ -95,7 +103,8 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` notes + cards wri
 - [ ] **M20 · Generative protein/enzyme design** — RFdiffusion, ProteinMPNN.
 - [ ] **M21 · Property, reaction & docking prediction.**
 - [ ] **M22 · Capstone directions for climate** — carbon capture, plastic degradation,
-  N-fixation, biofuels: what's tractable, what's open.
+  N-fixation, biofuels, **hydrogenotroph food** (`notes/app-hydrogenotroph-food.md`):
+  what's tractable, what's open.
 
 ---
 

@@ -8,6 +8,18 @@ Format per entry:
 
 ---
 
+- **2026-06-09** — **Added target application: hydrogenotroph food** (learner interest —
+  Solar Foods / Solein). Registered, not yet deeply studied: hydrogen-oxidizing bacteria
+  making single-cell protein from H₂+CO₂+O₂ ("protein from air & electricity"). Connected
+  to covered modules: hydrogenases = Ni-Fe metalloenzymes (M8); H₂ a strong electron donor,
+  E°′≈−0.42 V, knallgas → ΔG=−nFΔE (M10); CO₂ fixed via Calvin/RuBisCO (M13). Climate
+  rationale (decouples food from land) + ML angles (O₂-tolerant hydrogenases, faster CO₂
+  fixation, strain/purine optimization). Artifacts: `notes/app-hydrogenotroph-food.md`,
+  deck `app-hydrogenotrophs`; curriculum gained a "Target applications" section + M22 entry.
+  **Plan:** study as a dedicated module after M12/M13.
+  (Note: this session also recovered from a stale local clone — M8/M9/M10 were intact on
+  the remote all along; no work was lost.)
+
 - **2026-06-09** — **M10 covered** (learner asked for more repetition/depth — module
   deliberately re-treads M2 then deepens). Bioenergetics: ΔG°′ vs actual ΔG (concentration
   term sets direction); ATP favourability re-derived; the **phosphoryl-transfer hierarchy**
