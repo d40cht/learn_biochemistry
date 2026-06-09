@@ -32,6 +32,16 @@ A: The side chain (R group); all share the same amino + carboxyl + alpha-carbon 
 ```
 python flashcards/build_anki.py
 ```
-This writes one TSV per deck to `flashcards/build/`. In Anki: *File → Import*,
-choosing each TSV. The header lines tell Anki to use tabs, treat the 3rd column as
-tags, and render HTML.
+This writes two kinds of output to `flashcards/build/` (which is git-ignored, so
+regenerate it whenever you need it):
+
+- **`learn_biochemistry.apkg`** — a single Anki package with every deck as a subdeck
+  under `Biochemistry::` (e.g. `Biochemistry::M3 — Amino acids`). One-tap import on
+  AnkiDroid (open the file) or desktop (*File → Import*). No AnkiWeb account needed.
+  Re-importing after a rebuild updates existing cards rather than duplicating them
+  (notes carry a stable GUID derived from their content).
+- **`<deck>.tsv`** — one tab-separated file per deck, for manual import. The header
+  lines tell Anki to use tabs, treat the 3rd column as tags, and render HTML.
+
+The `.apkg` is the easy path, especially on mobile. Use the TSVs only if you want
+fine-grained control over deck/field mapping at import time.
