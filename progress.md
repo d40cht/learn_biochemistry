@@ -8,6 +8,32 @@ Format per entry:
 
 ---
 
+- **2026-06-09** — **M8 covered (a big one, very Socratic).** Enzyme catalysis built
+  almost entirely from the learner's own questions. Core: enzymes lower Eₐ by stabilising
+  the TRANSITION STATE, not the substrate (binding substrate tightly = anti-catalysis);
+  binding energy spent on differential TS binding + proximity/orientation (entropy
+  pre-payment); active site = the 3D fold; induced fit; geometry vs electrostatic
+  preorganisation (latter usually dominant); the 5 catalytic strategies (His acid–base
+  star); cofactors/coenzymes extend the toolkit; product release = weak product binding
+  (fits TS not product), with the bind-TS-tight-but-release-product-loose tension and
+  product inhibition / diffusion limit. Long detailed-balance thread: a catalyst CANNOT
+  change equilibrium (same TS both ways; 2nd-law/perpetual-motion argument; binding
+  asymmetries cancel for free S/P; Haldane relationship). Direction comes from ΔG°
+  (P below S); ΔG°=0 → catalyses both ways equally; big −ΔG° (ATP-coupled) = the real
+  irreversible "ratchet", not the enzyme. Case studies: carbonic anhydrase (Zn²⁺ →
+  hydroxide nucleophile, His proton shuttle, diffusion-limited, carbon-capture target)
+  and RuBisCO (slow ~3/s, sloppy → photorespiration ~25% loss, speed–specificity
+  trade-off = the binding trade-off realised globally, prime ML target).
+  Artifacts: `notes/m8-enzymes.md`, deck `m8-enzymes` (16 cards),
+  `problems/m8-rubisco-abundance.md` (10⁶/3 ≈ 3×10⁵ → why it's the most abundant protein).
+  **What to test next time:** TS-stabilisation & the anti-catalysis trap; TS analogs;
+  proximity/entropy; induced fit; geometry-vs-electrostatics; the 5 strategies; why
+  cofactors; product release & the design tension; no-ratchet/Haldane; ΔG°=0 case;
+  carbonic anhydrase Zn mechanism; RuBisCO's two failings + why stuck + why ML target.
+  **Next:** M9 (enzyme kinetics — Michaelis–Menten, k_cat, K_M, k_cat/K_M, diffusion
+  limit; quantitative, suits the learner's maths) then M13 (photosynthesis/Calvin cycle,
+  where RuBisCO lives — the big climate module).
+
 - **2026-06-09** — **M4 covered.** Protein structure: the four levels; secondary
   structure as the BACKBONE satisfying its own H-bonds (α-helix C=O i→N–H i+4; β-sheet
   between adjacent strands; side chains point out; Ramachandran φ/ψ basins); tertiary

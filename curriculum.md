@@ -54,9 +54,10 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` notes + cards wri
 
 ## Part 2 — Function & catalysis
 
-- [ ] **M8 · Enzyme mechanism & catalysis**
+- [x] **M8 · Enzyme mechanism & catalysis**
   Active sites, transition-state stabilisation, cofactors, specificity.
   *Anchor:* RuBisCO and why it's slow & promiscuous; PETase.
+  → `notes/m8-enzymes.md`; deck `m8-enzymes`; `problems/m8-rubisco-abundance.md`.
 
 - [ ] **M9 · Enzyme kinetics** (problem-heavy)
   Michaelis–Menten, kcat/KM, inhibition, allostery.
