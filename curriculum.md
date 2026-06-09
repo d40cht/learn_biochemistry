@@ -95,9 +95,12 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` notes + cards wri
 
 ## Part 5 — The ML-for-bio layer (your expertise takes over)
 
-- [ ] **M17 · Molecular representations**
+- [~] **M17 · Molecular representations**
   Sequences, graphs, 3D point clouds, voxels, SMILES — mapped to your CV/geospatial
   toolkit (equivariance, point clouds, tokenisation).
+  → Survey pass done (`notes/m17-molecular-representations.md`, deck
+  `m17-molecular-representations`). Deepen later: GNN math, equivariance, AlphaFold/ESM
+  internals, hands-on Colab toys.
 - [ ] **M18 · Protein structure prediction** — AlphaFold2/3, the MSA→structure idea.
 - [ ] **M19 · Protein language models** — the ESM family, embeddings, zero-shot function.
 - [ ] **M20 · Generative protein/enzyme design** — RFdiffusion, ProteinMPNN.

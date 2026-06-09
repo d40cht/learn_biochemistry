@@ -8,6 +8,20 @@ Format per entry:
 
 ---
 
+- **2026-06-09** — **M17 survey pass** (a "fun diversion" into NN approaches, leveraging
+  the learner's ML expertise). Mapped representation → architecture: sequences→transformers/
+  protein LMs, 2D graphs→GNNs (molecule = graph, message passing, permutation invariance;
+  limitation = blind to 3D), 3D geometry→equivariant nets (SE(3)/E(3), generalising CNN
+  translation-equivariance; invariant distance/angle nets SchNet/DimeNet vs equivariant
+  tensor nets e3nn/NequIP/MACE; AlphaFold IPA frames). Protein stack: ESM LMs, AF2/AF3/
+  ESMFold, ProteinMPNN (inverse folding) + RFdiffusion (de novo). Through-line to climate
+  enzyme engineering (M8/M9 objectives → design). Survey only — flagged for deeper treatment
+  (M18–M22) and hands-on Colab toys later. Artifacts: `notes/m17-molecular-representations.md`,
+  deck `m17-molecular-representations` (10 cards); M17 marked [~].
+  **Deepen later:** GNN message-passing math/expressivity; equivariance derivations;
+  AlphaFold internals; ESM objectives; Colab toys (RDKit graph net; PDB carbonic-anhydrase
+  Zn site via Biopython/py3Dmol; ESM embedding).
+
 - **2026-06-09** — **Added target application: hydrogenotroph food** (learner interest —
   Solar Foods / Solein). Registered, not yet deeply studied: hydrogen-oxidizing bacteria
   making single-cell protein from H₂+CO₂+O₂ ("protein from air & electricity"). Connected
