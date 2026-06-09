@@ -13,16 +13,19 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` notes + cards wri
 
 ## Part 0 — Foundations (lean on the physics)
 
-- [ ] **M1 · Chemical foundations of life**
+- [x] **M1 · Chemical foundations of life**
   Water, hydrogen bonding & the hydrophobic effect, weak interactions, pH &
   buffers, chemical equilibrium.
   *Anchor:* why proteins fold and membranes self-assemble at all.
+  → `notes/m1-chemical-foundations.md`, deck `m1-chemical-foundations`, `problems/m1-buffer-capacity.md`.
 
-- [ ] **M2 · Thermodynamics & kinetics in biology**
+- [~] **M2 · Thermodynamics & kinetics in biology**
   Free energy (ΔG, ΔG°′), reaction coupling, ATP as energy currency; reaction
   rates, transition states, catalysis as rate enhancement.
   *Anchor:* what makes carbon-fixation reactions thermodynamically hard, and how
   cells pay for them.
+  → Done: free energy / equilibrium (`notes/m2-free-energy.md`, deck `m2-thermodynamics`).
+  Still to do: reaction coupling & ATP, kinetics (rates, transition states, catalysis).
 
 ## Part 1 — The molecules
 
