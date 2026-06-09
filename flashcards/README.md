@@ -39,7 +39,10 @@ regenerate it whenever you need it):
   under `Biochemistry::` (e.g. `Biochemistry::M3 — Amino acids`). One-tap import on
   AnkiDroid (open the file) or desktop (*File → Import*). No AnkiWeb account needed.
   Re-importing after a rebuild updates existing cards rather than duplicating them
-  (notes carry a stable GUID derived from their content).
+  (notes carry a stable GUID derived from their content). **This file is committed to
+  the repo** (the only tracked thing under `build/`), so you can download it straight
+  from GitHub without running anything. The build is deterministic, so it only changes
+  when card content changes.
 - **`<deck>.tsv`** — one tab-separated file per deck, for manual import. The header
   lines tell Anki to use tabs, treat the 3rd column as tags, and render HTML.
 

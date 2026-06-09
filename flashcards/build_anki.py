@@ -18,7 +18,6 @@ import json
 import re
 import sqlite3
 import sys
-import time
 import zipfile
 from pathlib import Path
 
@@ -29,6 +28,12 @@ DECK_PARENT = "Biochemistry"
 
 # A single shared "Basic" note type (Front/Back) used by every card.
 MODEL_ID = 1607392319000  # arbitrary fixed id; stable across rebuilds
+
+# Fixed timestamps + content-derived ids make the .apkg byte-stable across rebuilds,
+# so the committed package only changes when card content changes (no spurious diffs).
+EPOCH_S = 1700000000   # 2023-11-14, arbitrary fixed "creation" time
+EPOCH_MS = EPOCH_S * 1000
+ZIP_DATE = (2023, 11, 14, 0, 0, 0)
 
 # base91 alphabet used by Anki/genanki for note GUIDs (no quote/backslash).
 BASE91 = (
@@ -201,11 +206,18 @@ CREATE INDEX ix_notes_csum on notes (csum);
 """
 
 
-def build_apkg(decks: list[tuple[str, list[str], list[tuple[str, str]]]], out_path: Path) -> int:
-    now_ms = int(time.time() * 1000)
-    now_s = int(time.time())
+def _stable_id(used: set[int], *parts: str) -> int:
+    """A deterministic, unique, ms-timestamp-shaped integer id from content."""
+    n = int(hashlib.sha256("::".join(parts).encode("utf-8")).hexdigest(), 16) % (10 ** 12) + 10 ** 12
+    while n in used:
+        n += 1
+    used.add(n)
+    return n
 
-    decks_json = {"1": deck_entry(1, "Default", now_s)}
+
+def build_apkg(decks: list[tuple[str, list[str], list[tuple[str, str]]]], out_path: Path) -> int:
+    decks_json = {"1": deck_entry(1, "Default", EPOCH_S)}
+    used_deck_ids: set[int] = set()
     used_ids: set[int] = set()
 
     db_path = BUILD_DIR / "collection.anki2"
@@ -215,45 +227,45 @@ def build_apkg(decks: list[tuple[str, list[str], list[tuple[str, str]]]], out_pa
     cur = con.cursor()
     cur.executescript(SCHEMA)
 
-    nid = now_ms
-    cid = now_ms + 1_000_000
     due = 1
     card_count = 0
-
     for deck_name, tags, cards in decks:
         full_name = f"{DECK_PARENT}::{deck_name}"
-        did = stable_deck_id(full_name, used_ids)
-        decks_json[str(did)] = deck_entry(did, full_name, now_s)
+        did = stable_deck_id(full_name, used_deck_ids)
+        decks_json[str(did)] = deck_entry(did, full_name, EPOCH_S)
         tag_str = (" " + " ".join(tags) + " ") if tags else ""
         for question, answer in cards:
+            nid = _stable_id(used_ids, "nid", full_name, question)
+            cid = _stable_id(used_ids, "cid", full_name, question)
             flds = to_field(question) + "\x1f" + to_field(answer)
             cur.execute(
                 "INSERT INTO notes VALUES (?,?,?,?,?,?,?,?,?,?,?)",
-                (nid, guid_for(full_name, question), MODEL_ID, now_s, -1, tag_str,
+                (nid, guid_for(full_name, question), MODEL_ID, EPOCH_S, -1, tag_str,
                  flds, re.sub("<[^>]+>", "", to_field(question)), field_checksum(question), 0, ""),
             )
             cur.execute(
                 "INSERT INTO cards VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
-                (cid, nid, did, 0, now_s, -1, 0, 0, due, 0, 0, 0, 0, 0, 0, 0, 0, ""),
+                (cid, nid, did, 0, EPOCH_S, -1, 0, 0, due, 0, 0, 0, 0, 0, 0, 0, 0, ""),
             )
-            nid += 1
-            cid += 1
             due += 1
             card_count += 1
 
     cur.execute(
         "INSERT INTO col VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)",
-        (1, now_s, now_ms, now_ms, 11, 0, 0, 0,
-         json.dumps(collection_conf()), json.dumps({str(MODEL_ID): basic_model(now_ms)}),
+        (1, EPOCH_S, EPOCH_MS, EPOCH_MS, 11, 0, 0, 0,
+         json.dumps(collection_conf()), json.dumps({str(MODEL_ID): basic_model(EPOCH_MS)}),
          json.dumps(decks_json), json.dumps(default_dconf()), json.dumps({})),
     )
     con.commit()
     con.close()
 
-    with zipfile.ZipFile(out_path, "w", zipfile.ZIP_DEFLATED) as zf:
-        zf.write(db_path, "collection.anki2")
-        zf.writestr("media", "{}")
+    data = db_path.read_bytes()
     db_path.unlink()
+    with zipfile.ZipFile(out_path, "w", zipfile.ZIP_DEFLATED) as zf:
+        for name, payload in (("collection.anki2", data), ("media", b"{}")):
+            info = zipfile.ZipInfo(name, date_time=ZIP_DATE)
+            info.compress_type = zipfile.ZIP_DEFLATED
+            zf.writestr(info, payload)
     return card_count
 
 

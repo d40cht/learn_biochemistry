@@ -1,5 +1,7 @@
-# Generated Anki decks
-flashcards/build/
+# Generated flashcard outputs: ignore the regenerable TSVs, but commit the
+# pre-packaged .apkg so it can be downloaded straight from the repo.
+flashcards/build/*
+!flashcards/build/learn_biochemistry.apkg
 
 # Python
 __pycache__/
